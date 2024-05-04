@@ -66,15 +66,15 @@ add_action( 'widgets_init', 'simpleshop_widgets_init' );
 function simpleshop_assets(){
 
 	wp_enqueue_style('google-fonts','//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
-	wp_enqueue_style('bootstrap-css',get_theme_file_uri('/assets/vendor/bootstrap/css/bootstrap.min.css'));
-	wp_enqueue_style('fontawesome-css',get_theme_file_uri('/assets/vendor/font-awesome/css/font-awesome.min.css'));
-	wp_enqueue_style('bicon-css',get_theme_file_uri('/assets/vendor/bicon/css/bicon.css'));
-	wp_enqueue_style('simpleshop-theme-css',get_theme_file_uri('/assets/css/main.css'),null,time());
+	wp_enqueue_style('bootstrap-css',get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'));
+	wp_enqueue_style('fontawesome-css',get_theme_file_uri('assets/vendor/font-awesome/css/font-awesome.min.css'));
+	wp_enqueue_style('bicon-css',get_theme_file_uri('assets/vendor/bicon/css/bicon.css'));
+	wp_enqueue_style('simpleshop-theme-css',get_theme_file_uri('assets/css/main.css'), null,time());
 	wp_enqueue_style('simpleshop-css',get_stylesheet_uri());
 
-	wp_enqueue_script('bootstrap-js',get_theme_file_uri('/assets/vendor/bootstrap/js/bootstrap.min.js'),['jquery'],'default',true);
-	wp_enqueue_script('popper-js',get_theme_file_uri('/assets/vendor/popper.min.js'),['jquery'],'default',true);
-	wp_enqueue_script('simpleshop-js',get_theme_file_uri('/assets/js/scripts.js'),['jquery'],time(),true);
+	wp_enqueue_script('bootstrap-js',get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.min.js'),['jquery'],'default',true);
+	wp_enqueue_script('popper-js',get_theme_file_uri('assets/vendor/popper.min.js'),['jquery'],'default',true);
+	wp_enqueue_script('simpleshop-js',get_theme_file_uri('assets/js/scripts.js'),['jquery'],time(),true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
