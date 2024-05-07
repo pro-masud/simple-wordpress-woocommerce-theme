@@ -33,7 +33,6 @@
                 <div class="col-md-12">
                     <ul class="products columns-3">
                         <?php echo do_shortcode('[product_categories columns="3"]'); ?>
-
                     </ul>
                 </div>
             </div>
