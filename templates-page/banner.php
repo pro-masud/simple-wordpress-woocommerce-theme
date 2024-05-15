@@ -1,4 +1,4 @@
-<!--hero section start-->
+<?php if(get_theme_mod('display_hero_section_heading', true)): ?>
 <div id="home">
     <section class="hero js_full_height base-gradient- " style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/hero.jpg');">
         <div class="hero-content">
@@ -15,4 +15,4 @@
         </div>
     </section>
 </div>
-<!--hero section end-->
+<?php endif; ?>
